@@ -5,16 +5,13 @@
 <!-- dataLayer -->
 <script>
     window.dataLayer = window.dataLayer || [];
-    dataLayer.push({
-    'user_id': 'user_123'
-    });
     dataLayer.push({ ecommerce: null });
     dataLayer.push({
         event: 'purchase',
         ecommerce: {
-        currency: 'JPY', 
         transaction_id: 12345678,  
-        value: 10000, 
+        value: 10000,
+        currency: 'JPY',  
             items: [{
             item_id: '123456', 
             item_name: 'test_item_name', 
